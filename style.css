@@ -1,6 +1,11 @@
+
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .fa {
@@ -178,11 +183,12 @@
 .container-vendas-1 h1 {
     display: flex;
     justify-content: center;
+    font-size: 25px;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
     margin: 10px;
-    bottom: 0.2rem;
+    bottom: 0.1rem;
     position: relative;
     margin: 0 0 600px 0;
     color: #ffffff;
@@ -198,8 +204,9 @@
 
 .container-vendas-1 {
     display: grid;
+    max-width: 95%;
+    margin: 0 auto;
 }
-
 .galeria_vendas-1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -260,33 +267,8 @@
 
 .galeria_vendas-item-01 p:nth-child(2) {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     font-weight: normal;
-    display: flex;
-    justify-content: left;
-    line-height: 15px;
-    position: relative;
-    top: 10px;
-    color: #7B7B7B;
-}
-
-.galeria_vendas-item-01 p:nth-child(3) {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 2px;
-    display: flex;
-    justify-content: left;
-    line-height: 1px;
-    position: relative;
-    top: 10px;
-    color: #7B7B7B;
-}
-
-.galeria_vendas-item-01 p:nth-child(3) {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
-    padding: 0px;
     display: flex;
     justify-content: left;
     line-height: 20px;
@@ -295,13 +277,27 @@
     color: #7B7B7B;
 }
 
-.galeria_vendas-item-02 p:nth-child(2) {
+.galeria_vendas-item-01 p:nth-child(3) {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content: left;
+    line-height: 20px;
+    position: relative;
+    top: 10px;
+    color: #7B7B7B;
+}
+
+
+.galeria_vendas-item-02 p:nth-child(2) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0rem;
     font-weight: normal;
     display: flex;
     justify-content: left;
-    line-height: 15px;
+    line-height: 20px;
     position: relative;
     top: 10px;
     color: #7B7B7B;
@@ -309,21 +305,9 @@
 
 .galeria_vendas-item-02 p:nth-child(3) {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
     padding: 2px;
-    display: flex;
-    justify-content: left;
-    line-height: 1px;
-    position: relative;
-    top: 10px;
-    color: #7B7B7B;
-}
-
-.galeria_vendas-item-02 p:nth-child(4) {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
-    padding: 0px;
     display: flex;
     justify-content: left;
     line-height: 20px;
@@ -335,11 +319,11 @@
 
 .galeria_vendas-item-03 p:nth-child(2) {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     font-weight: normal;
     display: flex;
     justify-content: left;
-    line-height: 15px;
+    line-height: 20px;
     position: relative;
     top: 10px;
     color: #7B7B7B;
@@ -347,21 +331,9 @@
 
 .galeria_vendas-item-03 p:nth-child(3) {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
     padding: 2px;
-    display: flex;
-    justify-content: left;
-    line-height: 1px;
-    position: relative;
-    top: 10px;
-    color: #7B7B7B;
-}
-
-.galeria_vendas-item-03 p:nth-child(4) {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
-    padding: 0px;
     display: flex;
     justify-content: left;
     line-height: 20px;
@@ -373,33 +345,8 @@
 
 .galeria_vendas-item-04 p:nth-child(2) {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: normal;
-    display: flex;
-    justify-content: left;
-    line-height: 15px;
-    position: relative;
-    top: 10px;
-    color: #7B7B7B;
-}
-
-.galeria_vendas-item-04 p:nth-child(3) {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 2px;
-    display: flex;
-    justify-content: left;
-    line-height: 1px;
-    position: relative;
-    top: 10px;
-    color: #7B7B7B;
-}
-
-.galeria_vendas-item-04 p:nth-child(4) {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
-    padding: 0px;
     display: flex;
     justify-content: left;
     line-height: 20px;
@@ -407,6 +354,20 @@
     top: 10px;
     color: #7B7B7B;
 }
+
+.galeria_vendas-item-04 p:nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content: left;
+    line-height: 20px;
+    position: relative;
+    top: 10px;
+    color: #7B7B7B;
+}
+
 
 .galeria_vendas-1 button:nth-child(2) {
     width: 70px;
@@ -438,7 +399,7 @@
 
 .galeria_vendas-item-buysec p {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     padding: 0px;
     display: flex;
     justify-content: left;
