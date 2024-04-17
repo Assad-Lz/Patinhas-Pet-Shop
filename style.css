@@ -181,25 +181,25 @@ body {
 }
 
 .container-vendas-1 h1 {
-    display: flex;
-    justify-content: center;
     font-size: 25px;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
     margin: 10px;
-    bottom: 0.1rem;
     position: relative;
     margin: 0 0 600px 0;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-vendas-1-title {
     background-color: #2cbbc1;
     max-height: 8%;
     max-width: 100%;
-    margin: 15px 20px 2px;
-    border-radius: 25px 5px 25px 5px;
+    margin: 40px 20px 2px;
+    border-radius: 25px;
+    animation: slideleft 4s ease-in-out alternate-reverse;
 }
 
 .container-vendas-1 {
@@ -405,6 +405,66 @@ body {
     justify-content: left;
     line-height: 20px;
     position: relative;
-    top: 10px;
+    top: 5px;
     color: #7B7B7B;
+}
+
+@keyframes slideleft {
+  from {
+    transform: translateX(0px) translateY(0px);
+  }
+  to {
+    transform: translateX(100px) translateY(0px);
+  }
+}
+
+footer {
+  background-color: #fd9a32;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+}
+
+footer button {
+  background: transparent;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.info-sec {
+  background-color: #f2f2f2;
+  position: relative;
+  bottom: 500px;  
+  height: 500px;
+  max-width: 100%;
+  display: flex;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.info-sec-container img {
+  max-width: 70%;
+}
+
+.info-sec-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.info-sec-container h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #8c5826;
+  text-align: center;
+  font-weight: normal;
 }
